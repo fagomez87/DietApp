@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.tp3.proyectofinal.R
 import com.tp3.proyectofinal.entity.login.Credential
+import com.tp3.proyectofinal.entity.user.User
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,15 +24,14 @@ private const val ARG_PARAM2 = "param2"
  */
 class LoginFragment : Fragment() {
     // TODO: Rename and change types of parameters
-//    private var param1: String? = null
-//    private var param2: String? = null
+//    private var user: String? = null
+//    private var password: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
 //            esto serviría para pasarle a la home el usuario logueado
-//            param1 = it.getString(ARG_PARAM1)
-//            param2 = it.getString(ARG_PARAM2)
+//            user = it.getString(ARG_PARAM1)
         }
     }
 
@@ -46,9 +46,14 @@ class LoginFragment : Fragment() {
         val password = view.findViewById<EditText>(R.id.passTxt)
         btnLogin.setOnClickListener {
             val credenciales = Credential(username.toString(), password.toString())
+            validateLogin(credenciales)
             Toast.makeText(context, credenciales.toString(), Toast.LENGTH_LONG).show()
         }
         return view
+    }
+
+    private fun validateLogin(credenciales: Credential) {
+
     }
 
     companion object {
