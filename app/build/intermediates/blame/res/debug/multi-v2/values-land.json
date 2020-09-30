@@ -4,7 +4,7 @@
             "outputFile": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/home/fernandogomez/.gradle/caches/transforms-2/files-2.1/c122524bdc2720f57dd4384861ac7d8d/material-1.0.0/res/values-land/values-land.xml",
+                    "source": "/home/fernandogomez/.gradle/caches/transforms-2/files-2.1/c7dafa15ea99b0771528722d66fbebb5/material-1.0.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/fernandogomez/.gradle/caches/transforms-2/files-2.1/035e79feac643ff23f2c9730c699e50a/appcompat-1.2.0/res/values-land/values-land.xml",
+                    "source": "/home/fernandogomez/.gradle/caches/transforms-2/files-2.1/27c2546d1174ff18cf29b052a6242ef9/appcompat-1.2.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

@@ -1213,6 +1213,7 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable images_removebg_preview
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1228,6 +1229,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable sky_removebg_preview
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1296,6 +1298,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_opcionesFragment_to_listaOpcionesFragment2
+id action_registerFragment_to_loginFragment
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1342,6 +1345,7 @@ id coordinator
 id cos
 id custom
 id customPanel
+id dataBinding
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -1425,6 +1429,7 @@ id mailTxt
 id main_nav
 id masked
 id media_actions
+id menuBtn
 id message
 id middle
 id mini
@@ -1444,6 +1449,9 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id onAttachStateChangeListener
+id onDateChanged
+id opcionesBtn
 id opcionesFragment
 id outline
 id packed
@@ -1463,8 +1471,10 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id realizadasBtn
 id realizadasFragment
 id rectangles
+id regBtn
 id registerFragment
 id reverseSawtooth
 id right
@@ -1536,6 +1546,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textWatcher
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1706,9 +1717,13 @@ string fab_transformation_sheet_behavior
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string login
+string logo
+string mi_menu
 string mtrl_chip_close_icon_content_description
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string opciones_de_comida
+string opciones_realizadas
 string password
 string password_toggle_content_description
 string path_password_eye
