@@ -50,7 +50,6 @@ class LoginFragment : Fragment() {
         val username = view.findViewById(R.id.userTxt) as EditText
         val password = view.findViewById(R.id.passTxt) as EditText
         btnLogin.setOnClickListener {
-//            val usr = User(username.toString(), password.toString())
             if (validateLogin(username.text, password.text)) {
                 view.findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
             } else {
