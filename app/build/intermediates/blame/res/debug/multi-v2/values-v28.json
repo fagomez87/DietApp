@@ -4,7 +4,7 @@
             "outputFile": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "/home/fernandogomez/.gradle/caches/transforms-2/files-2.1/27c2546d1174ff18cf29b052a6242ef9/appcompat-1.2.0/res/values-v28/values-v28.xml",
+                    "source": "/home/fernandogomez/.gradle/caches/transforms-2/files-2.1/7d16c1ab7a62bd3550c85c6cef84aa3a/appcompat-1.2.0/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",

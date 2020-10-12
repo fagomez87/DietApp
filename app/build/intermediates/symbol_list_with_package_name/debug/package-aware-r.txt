@@ -91,6 +91,7 @@ attr allowStacking
 attr alpha
 attr alphabeticModifiers
 attr altSrc
+attr animateOnBoundary
 attr animate_relativeTo
 attr applyMotionScene
 attr arcMode
@@ -99,6 +100,7 @@ attr arrowHeadLength
 attr arrowShaftLength
 attr attributeName
 attr autoCompleteTextViewStyle
+attr autoPlay
 attr autoSizeMaxTextSize
 attr autoSizeMinTextSize
 attr autoSizePresetSizes
@@ -156,6 +158,7 @@ attr cardMaxElevation
 attr cardPreventCornerOverlap
 attr cardUseCompatPadding
 attr cardViewStyle
+attr centered
 attr chainUseRtl
 attr checkboxStyle
 attr checkedChip
@@ -260,6 +263,7 @@ attr destination
 attr dialogCornerRadius
 attr dialogPreferredPadding
 attr dialogTheme
+attr disableAutoPlayOnUserInteraction
 attr displayOptions
 attr divider
 attr dividerHorizontal
@@ -313,6 +317,7 @@ attr fastScrollHorizontalThumbDrawable
 attr fastScrollHorizontalTrackDrawable
 attr fastScrollVerticalThumbDrawable
 attr fastScrollVerticalTrackDrawable
+attr fillColor
 attr firstBaselineToTopHeight
 attr floatingActionButtonStyle
 attr flow_firstHorizontalBias
@@ -375,6 +380,11 @@ attr iconTintMode
 attr iconifiedByDefault
 attr imageButtonStyle
 attr indeterminateProgressStyle
+attr indicatorGravity
+attr indicatorMarginHorizontal
+attr indicatorMarginVertical
+attr indicatorOrientation
+attr indicatorVisibility
 attr initialActivityCount
 attr insetForeground
 attr isLightTheme
@@ -531,6 +541,9 @@ attr paddingBottomNoButtons
 attr paddingEnd
 attr paddingStart
 attr paddingTopNoTitle
+attr pageColor
+attr pageTransformInterval
+attr pageTransformer
 attr panelBackground
 attr panelMenuListTheme
 attr panelMenuListWidth
@@ -562,6 +575,7 @@ attr progressBarStyle
 attr queryBackground
 attr queryHint
 attr radioButtonStyle
+attr radius
 attr ratingBarStyle
 attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
@@ -593,8 +607,10 @@ attr singleChoiceItemLayout
 attr singleLine
 attr singleSelection
 attr sizePercent
+attr slideInterval
 attr snackbarButtonStyle
 attr snackbarStyle
+attr snap
 attr spanCount
 attr spinBars
 attr spinnerDropDownItemStyle
@@ -729,6 +745,7 @@ attr useCompatPadding
 attr viewInflaterClass
 attr visibilityMode
 attr voiceIcon
+attr vpiCirclePageIndicatorStyle
 attr warmth
 attr waveDecay
 attr waveOffset
@@ -748,6 +765,8 @@ attr windowNoTitle
 bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
+bool default_circle_indicator_centered
+bool default_circle_indicator_snap
 bool mtrl_btn_textappearance_all_caps
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
@@ -797,6 +816,9 @@ color cardview_shadow_start_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color default_circle_indicator_fill_color
+color default_circle_indicator_page_color
+color default_circle_indicator_stroke_color
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -883,6 +905,14 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color vpi__background_holo_dark
+color vpi__background_holo_light
+color vpi__bright_foreground_disabled_holo_dark
+color vpi__bright_foreground_disabled_holo_light
+color vpi__bright_foreground_holo_dark
+color vpi__bright_foreground_holo_light
+color vpi__bright_foreground_inverse_holo_dark
+color vpi__bright_foreground_inverse_holo_light
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -972,6 +1002,10 @@ dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
 dimen def_drawer_elevation
+dimen default_circle_indicator_radius
+dimen default_circle_indicator_stroke_width
+dimen default_indicator_margin_horizontal
+dimen default_indicator_margin_vertical
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
 dimen design_bottom_navigation_active_item_min_width
@@ -1286,18 +1320,22 @@ id action_bar_subtitle
 id action_bar_title
 id action_container
 id action_context_bar
+id action_detalleOpcionesFragment_to_recipeFragment
 id action_divider
+id action_homeFragment_to_menuFragment
 id action_homeFragment_to_opcionesFragment
 id action_homeFragment_to_realizadasFragment
 id action_image
 id action_loginFragment_to_homeFragment
+id action_loginFragment_to_recoverFragment
 id action_loginFragment_to_registerFragment
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_opcionesFragment_to_listaOpcionesFragment2
+id action_opcionesFragment_to_detalleOpcionesFragment
+id action_realizadasFragment_to_detalleFragment
 id action_registerFragment_to_loginFragment
 id action_text
 id actions
@@ -1327,6 +1365,7 @@ id btnLogin
 id btnRegister
 id buttonPanel
 id cancel_action
+id card_package_item
 id center
 id center_horizontal
 id center_vertical
@@ -1339,6 +1378,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id container
+id containerViewPager
 id content
 id contentPanel
 id coordinator
@@ -1351,12 +1391,15 @@ id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
 id deltaRelative
+id depth
+id desayuno
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
-id detalleOpcionesFragment2
+id detalleFragment
+id detalleOpcionesFragment
 id dialog_button
 id dimensions
 id direct
@@ -1386,7 +1429,9 @@ id fill_vertical
 id filled
 id fixed
 id flip
+id flow
 id forever
+id fragOpciones
 id fragment
 id fragment_container_view_tag
 id frameLayout
@@ -1399,16 +1444,22 @@ id graph
 id graph_wrap
 id group_divider
 id groups
+id guideline4
+id guideline5
 id home
 id homeAsUp
 id homeFragment
 id honorRequest
+id horizontal
 id icon
 id icon_group
 id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
+id img_item
+id indicator
 id info
 id invisible
 id italic
@@ -1430,6 +1481,7 @@ id main_nav
 id masked
 id media_actions
 id menuBtn
+id menuFragment
 id message
 id middle
 id mini
@@ -1473,6 +1525,8 @@ id radio
 id ratio
 id realizadasBtn
 id realizadasFragment
+id recipeFragment
+id recoverFragment
 id rectangles
 id regBtn
 id registerFragment
@@ -1506,6 +1560,7 @@ id showCustom
 id showHome
 id showTitle
 id sin
+id slide_over
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1567,18 +1622,21 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txt_name_item
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
 id userTxt
+id vertical
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
 id withText
 id wrap
 id wrap_content
+id zoom
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1586,6 +1644,7 @@ integer bottom_sheet_slide_duration
 integer cancel_button_image_alpha
 integer config_navAnimTime
 integer config_tooltipAnimTime
+integer default_circle_indicator_orientation
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
 integer hide_password_duration
@@ -1651,11 +1710,16 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_detalle_opciones
+layout fragment_detalle_realizadas
 layout fragment_home
 layout fragment_login
+layout fragment_menu
 layout fragment_opciones
 layout fragment_realizadas
+layout fragment_recipe
+layout fragment_recover
 layout fragment_register
+layout item_comidas
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1677,6 +1741,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout view_carousel
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation main_nav
@@ -1707,21 +1772,27 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string apellido
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string edad
+string email
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string imagencomida
 string login
 string logo
 string mi_menu
 string mtrl_chip_close_icon_content_description
+string name
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string nombre
 string opciones_de_comida
 string opciones_realizadas
 string password
@@ -1730,6 +1801,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string registrar
 string registrarse
 string search_menu_title
 string status_bar_notification_info_overflow
@@ -2264,8 +2336,10 @@ styleable BottomNavigationView elevation itemBackground itemHorizontalTranslatio
 styleable BottomSheetBehavior_Layout behavior_fitToContents behavior_hideable behavior_peekHeight behavior_skipCollapsed
 styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
+styleable CarouselView animateOnBoundary autoPlay disableAutoPlayOnUserInteraction fillColor indicatorGravity indicatorMarginHorizontal indicatorMarginVertical indicatorOrientation indicatorVisibility pageColor pageTransformInterval pageTransformer radius slideInterval snap strokeColor strokeWidth
 styleable Chip android_textAppearance android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipStartPadding chipStrokeColor chipStrokeWidth closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible hideMotionSpec iconEndPadding iconStartPadding rippleColor showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
+styleable CirclePageIndicator android_orientation android_background centered fillColor pageColor radius snap strokeColor strokeWidth
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha
@@ -2355,4 +2429,5 @@ styleable Transition android_id autoTransition constraintSetEnd constraintSetSta
 styleable Variant constraints region_heightLessThan region_heightMoreThan region_widthLessThan region_widthMoreThan
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
+styleable ViewPagerIndicator vpiCirclePageIndicatorStyle
 styleable ViewStubCompat android_id android_layout android_inflatedId

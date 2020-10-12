@@ -4,12 +4,24 @@
         "source": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/res/drawable/sky_removebg_preview.png"
     },
     {
+        "merged": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/res/merged/debug/layout_fragment_menu.xml.flat",
+        "source": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/res/layout/fragment_menu.xml"
+    },
+    {
         "merged": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/res/merged/debug/layout_fragment_recipe.xml.flat",
+        "source": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/res/layout/fragment_recipe.xml"
+    },
+    {
+        "merged": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/res/merged/debug/layout_item_comidas.xml.flat",
+        "source": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/res/layout/item_comidas.xml"
     },
     {
         "merged": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
@@ -48,6 +60,10 @@
         "source": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/res/layout/fragment_register.xml"
     },
     {
+        "merged": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/res/merged/debug/layout_fragment_detalle_realizadas.xml.flat",
+        "source": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/res/layout/fragment_detalle_realizadas.xml"
+    },
+    {
         "merged": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
@@ -62,6 +78,10 @@
     {
         "merged": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/res/merged/debug/layout_fragment_recover.xml.flat",
+        "source": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/res/layout/fragment_recover.xml"
     },
     {
         "merged": "/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/build/intermediates/res/merged/debug/layout_fragment_login.xml.flat",

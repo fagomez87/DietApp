@@ -18,6 +18,9 @@
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment"
             app:enterAnim="@anim/fragment_open_enter" />
+        <action
+            android:id="@+id/action_loginFragment_to_recoverFragment"
+            app:destination="@id/recoverFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -32,6 +35,9 @@
             android:id="@+id/action_homeFragment_to_realizadasFragment"
             app:destination="@id/realizadasFragment"
             app:enterAnim="@anim/fragment_open_enter" />
+        <action
+            android:id="@+id/action_homeFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -48,18 +54,45 @@
         android:label="fragment_opciones"
         tools:layout="@layout/fragment_opciones" >
         <action
-            android:id="@+id/action_opcionesFragment_to_listaOpcionesFragment2"
-            app:destination="@id/detalleOpcionesFragment2"
-            app:enterAnim="@anim/fragment_open_enter" />
+            android:id="@+id/action_opcionesFragment_to_detalleOpcionesFragment"
+            app:destination="@id/detalleOpcionesFragment" />
     </fragment>
     <fragment
         android:id="@+id/realizadasFragment"
         android:name="com.tp3.proyectofinal.fragment.RealizadasFragment"
         android:label="fragment_realizadas"
-        tools:layout="@layout/fragment_realizadas" />
+        tools:layout="@layout/fragment_realizadas" >
+        <action
+            android:id="@+id/action_realizadasFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/detalleOpcionesFragment2"
+        android:id="@+id/detalleOpcionesFragment"
         android:name="com.tp3.proyectofinal.fragment.ListaOpcionesFragment"
         android:label="fragment_detalle_opciones"
-        tools:layout="@layout/fragment_detalle_opciones" />
+        tools:layout="@layout/fragment_detalle_opciones" >
+        <action
+            android:id="@+id/action_detalleOpcionesFragment_to_recipeFragment"
+            app:destination="@id/recipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.tp3.proyectofinal.fragment.DetalleFragment"
+        android:label="fragment_detalle_realizadas"
+        tools:layout="@layout/fragment_detalle_realizadas" />
+    <fragment
+        android:id="@+id/recoverFragment"
+        android:name="com.tp3.proyectofinal.fragment.RecoverFragment"
+        android:label="fragment_recover"
+        tools:layout="@layout/fragment_recover" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.tp3.proyectofinal.fragment.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="com.tp3.proyectofinal.fragment.RecipeFragment"
+        android:label="fragment_recipe"
+        tools:layout="@layout/fragment_recipe" />
 </navigation>

@@ -15,7 +15,7 @@
 12        android:allowBackup="true"
 12-->/home/fernandogomez/Desktop/ORT/Cuatri 2/DietApp/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.3.1] /home/fernandogomez/.gradle/caches/transforms-2/files-2.1/1a5e26edf8562f01a2d06c6cf856e4d3/core-1.3.1/AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.3.1] /home/fernandogomez/.gradle/caches/transforms-2/files-2.1/d729356f59566f1aea77cf8334f5f66e/core-1.3.1/AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:extractNativeLibs="false"
 16        android:icon="@drawable/sky_removebg_preview"

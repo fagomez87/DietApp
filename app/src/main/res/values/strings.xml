@@ -10,4 +10,11 @@
     <string name="mi_menu">Mi Menu</string>
     <string name="hello_blank_fragment">hello_blank_fragment</string>
     <string name="logo">Logo</string>
+    <string name="registrar">Registrar</string>
+    <string name="edad">Edad</string>
+    <string name="apellido">Apellido</string>
+    <string name="nombre">Nombre</string>
+    <string name="email">Email</string>
+    <string name="name">name</string>
+    <string name="imagencomida">ImagenComida</string>
 </resources>

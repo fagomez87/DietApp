@@ -64,11 +64,12 @@ class LoginFragment : Fragment() {
 
     private fun validateLogin(usr: Editable, pass: Editable): Boolean {
         val user = User(usr.toString(), pass.toString())
+        var valid = false
         for (elem in usuarios)
             if (elem.name == user.name)
                 if (elem.pass == user.pass)
-                    return true
-        return false
+                    valid = true
+        return valid
 
     }
 
