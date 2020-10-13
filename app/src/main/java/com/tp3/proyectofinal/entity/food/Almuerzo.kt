@@ -4,15 +4,15 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.sql.Date
 
-@Entity(tableName = "meriendas")
-class Merienda (idMenu : Int, nombreMenu : String, detalle : String, porcion : int , calorias : int, tipoComida : String, idImagen : int ){
+@Entity(tableName = "almuerzos")
+class Almuerzo (idMenu : Int, nameMenu : String, detalle : String, porcion : int , calorias : int, tipoComida : String, idImagen : int ){
 
     @PrimaryKey
     @ColumnInfo(name = "idMenu")
-    var idMenu : Int = idMenu
+    var idMenu : Int = id
 
-    @ColumnInfo(name = "nombreMenu")
-    var nombreMenu : String = ""
+    @ColumnInfo(name = "nameMenu")
+    var nameMenu : String = ""
 
     @ColumnInfo(name = "detalle")
     var detalle : String = ""
@@ -31,7 +31,7 @@ class Merienda (idMenu : Int, nombreMenu : String, detalle : String, porcion : i
 
     init {
         this.idMenu = idMenu
-        this.nombreMenu = nombreMenu
+        this.nameMenu = nameMenu
         this.detalle = detalle
         this.porcion = porcion
         this.calorias = calorias
