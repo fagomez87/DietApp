@@ -2,10 +2,9 @@ package com.tp3.proyectofinal.entity.food
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.sql.Date
 
 @Entity(tableName = "meriendas")
-class Merienda (idMenu : Int, nombreMenu : String, detalle : String, porcion : int , calorias : int, tipoComida : String, idImagen : int ){
+class Merienda (idMenu : Int, nombreMenu : String, detalle : String, porcion : Int , calorias : Int, tipoComida : String, idImagen : Int ){
 
     @PrimaryKey
     @ColumnInfo(name = "idMenu")

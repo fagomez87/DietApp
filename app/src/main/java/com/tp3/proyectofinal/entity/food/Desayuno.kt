@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import java.sql.Date
 
 @Entity(tableName = "desayunos")
-class Desayuno (idMenu : Int, nombreMenu : String, detalle : String, porcion : int , calorias : int, tipoComida : String, idImagen : int ){
+class Desayuno (idMenu : Int, nombreMenu : String, detalle : String, porcion : Int , calorias : Int, tipoComida : String, idImagen : Int ){
 
     @PrimaryKey
     @ColumnInfo(name = "idMenu")

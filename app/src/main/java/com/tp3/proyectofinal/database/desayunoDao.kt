@@ -1,6 +1,6 @@
 package com.tp3.proyectofinal.database
 import androidx.room.*
-import com.tp3.proyectofinal.entity.food.Deayuno
+import com.tp3.proyectofinal.entity.food.Desayuno
 
 @Dao
 interface desayunoDao {

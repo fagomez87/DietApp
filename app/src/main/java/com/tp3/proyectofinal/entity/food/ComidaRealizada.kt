@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import java.sql.Date
 
 @Entity(tableName = "comidasRealizadas")
-class ComidaRealizada (idUsuario : Int, nombreUsuario : String, idMenu : Int, nombreMenu : String , diaRealizada : date , diaSemana : date, idImagen : int ) {
+class ComidaRealizada (idUsuario : Int, nombreUsuario : String, idMenu : Int, nombreMenu : String , diaRealizada : Date , diaSemana : Date, idImagen : Int ) {
 
     @PrimaryKey
     @ColumnInfo(name = "idUsuario")
@@ -21,10 +21,10 @@ class ComidaRealizada (idUsuario : Int, nombreUsuario : String, idMenu : Int, no
     var nombreMenu : String = ""
 
     @ColumnInfo(name = "diaRealizada")
-    var diaRealizada : date = diaRealizada
+    var diaRealizada : Date = diaRealizada
 
     @ColumnInfo(name = "diaSemana")
-    var diaSemana : date = diaRealizada
+    var diaSemana : Date = diaRealizada
 
     @ColumnInfo(name = "idImagen")
     var idImagen : Int = idImagen

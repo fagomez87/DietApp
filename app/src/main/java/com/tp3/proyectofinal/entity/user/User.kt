@@ -6,8 +6,8 @@ import androidx.room.PrimaryKey
 import java.sql.Date
 
 @Entity(tableName = "users")
-class User(id : Int, name : String, mail : String, user : String, pass : String, nacimiento : Date){
-    @PrimaryKey
+class User(id : Int, name : String, mail : String, user : String, pass : String, nacimiento : String){
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
     var id : Int = id
 
@@ -24,7 +24,7 @@ class User(id : Int, name : String, mail : String, user : String, pass : String,
     var pass : String = ""
 
     @ColumnInfo(name = "fnac")
-    var nacimiento : Date
+    var nacimiento : String
 
     init {
         this.name = name
@@ -33,4 +33,7 @@ class User(id : Int, name : String, mail : String, user : String, pass : String,
         this.pass = pass
         this.nacimiento = nacimiento
     }
+
+    constructor() : this(0,"","","","","")
+
 }

@@ -13,12 +13,13 @@
         android:layout_height="wrap_content"
         android:ems="15"
         android:hint="@string/email"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/ageTxt"
+        app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/surnameTxt"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/userTxt" />
 
     <EditText
         android:id="@+id/nameTxt"
@@ -27,7 +28,7 @@
         android:ems="15"
         android:hint="@string/nombre"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/surnameTxt"
+        app:layout_constraintBottom_toTopOf="@+id/userTxt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,32 +36,32 @@
         android:importantForAutofill="no" />
 
     <EditText
-        android:id="@+id/surnameTxt"
+        android:id="@+id/userTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
-        android:hint="@string/apellido"
+        android:hint="@string/user"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/mailTxt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameTxt"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/nameTxt" />
 
     <EditText
-        android:id="@+id/ageTxt"
+        android:id="@+id/dateBirth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/edad"
-        android:inputType="number"
+        android:hint="@string/fechaNac"
+        android:importantForAutofill="no"
+        android:inputType="date"
         app:layout_constraintBottom_toTopOf="@+id/regBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mailTxt"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <Button
         android:id="@+id/regBtn"
@@ -70,7 +71,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ageTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/dateBirth" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -84,6 +85,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="539dp" />
+        app:layout_constraintGuide_begin="598dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/dateBirth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mailTxt"
+        android:importantForAutofill="no" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
