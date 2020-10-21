@@ -1,13 +1,39 @@
 package com.tp3.proyectofinal.entity.user
 
-import com.tp3.proyectofinal.entity.login.Credential
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import java.sql.Date
 
-class User {
-    var us1 : Credential = Credential("Usr", "Pass")
+@Entity(tableName = "users")
+class User(id : Int, name : String, mail : String, user : String, pass : String, nacimiento : String){
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
+    var id : Int = id
 
-    var us2 : Credential = Credential("Usr2", "Pass2")
-    var us3 : Credential = Credential("Usr3", "Pass3")
+    @ColumnInfo(name = "name")
+    var name : String = ""
 
-    val usuarios : List<Credential> = mutableListOf<Credential>(us1,us2,us3)
+    @ColumnInfo(name = "mail")
+    var mail : String = ""
+
+    @ColumnInfo(name = "user")
+    var user : String = ""
+
+    @ColumnInfo(name = "pass")
+    var pass : String = ""
+
+    @ColumnInfo(name = "fnac")
+    var nacimiento : String
+
+    init {
+        this.name = name
+        this.mail = mail
+        this.user = user
+        this.pass = pass
+        this.nacimiento = nacimiento
+    }
+
+    constructor() : this(0,"","","","","")
 
 }

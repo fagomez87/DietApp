@@ -1,9 +1,19 @@
 <resources>
-    <string name="app_name">ProyectoFinal</string>
+    <string name="app_name">DietApp</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="registrarse">Registrarse</string>
     <string name="usuario">Usuario</string>
     <string name="password">Contraseña</string>
     <string name="login">Login</string>
+    <string name="opciones_de_comida">Opciones de comida</string>
+    <string name="opciones_realizadas">Opciones realizadas</string>
+    <string name="mi_menu">Mi Menu</string>
+    <string name="logo">Logo</string>
+    <string name="registrar">Registrar</string>
+    <string name="fechaNac">Fecha de nacimiento</string>
+    <string name="nombre">Nombre y apellido</string>
+    <string name="email">Email</string>
+    <string name="name">name</string>
+    <string name="imagencomida">ImagenComida</string>
+    <string name="user">User</string>
 </resources>

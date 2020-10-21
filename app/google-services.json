@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "887712931061",
+    "firebase_url": "https://dietapp-healthcare.firebaseio.com",
+    "project_id": "dietapp-healthcare",
+    "storage_bucket": "dietapp-healthcare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887712931061:android:804eb65ef43abfa4ccf9bc",
+        "android_client_info": {
+          "package_name": "com.tp3.proyectofinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887712931061-l958ii5jtglhfpvei4kqmkl26cvvq5j4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD4KIocz8f0g6TUlAYI5fmBUtjr6FOPNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887712931061-l958ii5jtglhfpvei4kqmkl26cvvq5j4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

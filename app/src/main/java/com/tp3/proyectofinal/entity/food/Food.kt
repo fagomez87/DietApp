@@ -3,12 +3,12 @@ package com.tp3.proyectofinal.entity.food
 import android.os.Parcel
 import android.os.Parcelable
 
-class Food(var name: String, var type: String, var calories: Int, var ingredients: List<String>, var urlImagen: String) : Parcelable {
+class Food(var name: String, var type: String, var calories: Int, var ingredients: String, var urlImagen: String) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString()!!,
         parcel.readString()!!,
         parcel.readInt(),
-        parcel.createStringArrayList()!!,
+        parcel.readString()!!,
         parcel.readString()!!
     )
 
@@ -16,7 +16,7 @@ class Food(var name: String, var type: String, var calories: Int, var ingredient
         parcel.writeString(name)
         parcel.writeString(type)
         parcel.writeInt(calories)
-        parcel.writeStringList(ingredients)
+        parcel.writeString(ingredients)
         parcel.writeString(urlImagen)
     }
 
